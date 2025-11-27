@@ -1,11 +1,10 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        mavenCentral() // <--- 添加这一行
+        mavenCentral()
         google()
     }
-}
-resolutionStrategy {
+    resolutionStrategy {
         eachPlugin {
             // 强制将 com.gradleup.shadow 映射到具体的 jar 包
             if (requested.id.id == "com.gradleup.shadow") {
