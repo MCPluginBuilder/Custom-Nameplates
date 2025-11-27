@@ -1,3 +1,10 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral() // <--- 添加这一行
+        google()
+    }
+}
 rootProject.name = "CustomNameplates"
 include(":api")
 include(":backend")
