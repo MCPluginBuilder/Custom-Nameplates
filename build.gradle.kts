@@ -1,6 +1,15 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+    dependencies {
+        // 直接引用插件的实现类 Jar 包
+        classpath("com.gradleup.shadow:shadow-gradle-plugin:9.2.2")
+    }
+}
 plugins {
     id("java")
-    id("com.gradleup.shadow") version "9.2.2"
 }
 
 val git : String = versionBanner()
